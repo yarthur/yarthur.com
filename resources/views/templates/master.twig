@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+
+		<title></title>
+
+		<link type="image/x-icon" rel="shortcut icon" href="/images/layout/favicon.png">
+
+		<link rel="stylesheet" href="/css/syntax.css">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/print.css" media="print">
+
+		{#
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-25413797-1']);
+
+
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'),
+					s = document.getElementsByTagName('script')[0];
+
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+				s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		#}
+	</head>
+
+	<body class="www-jtarthur-net {{ bodyClass }}">
+		<div role="banner">
+			<a href="/" title=" [http://jtarthur.net]"><img src="/assets/img/layout/site_id.png" alt="John Arthur"></a>
+
+		</div>
+
+		<ul role="navigation" class="nav-main">
+			<li><a href="{{ route('about') }}" title="About Me |  [http://jtarthur.net]">About</a></li>
+			<li><a href="{{ route('experience') }}" title="Experience |  [http://jtarthur.net]">Experience</a></li>
+			<li><a href="{{ route('contact') }}" title="Contact |  [http://jtarthur.net]">Contact</a></li>
+		</ul>
+
+		<div role="main">
+			{{ block('mainContent') }}
+		</div>
+
+		<div role="contentinfo">
+			<address class="vcard h-card contact">
+				<a class="fn org url p-name p-org u-url" href="{{ route('home') }}" title="John Arthur [www.jtarthur.net]" rel="me"><span class="given-name p-given-name">John</span> <span class="family-name p-family-name">Arthur</span></a>
+				|
+				<span class="adr p-adr">
+					<span class="locality p-locality">Lincoln</span>,
+					<span class="region p-region">Nebraska</span>
+				</span>
+				|
+				<span class="email u-email">john@jtarthur.net</span>
+				|
+				<a href="http://www.linkedin.com/pub/john-arthur/3/b60/591" style="text-decoration:none;">
+					<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="View John Arthur's LinkedIn profile" style="vertical-align:middle" width="20" border="0" height="15">
+				</a>
+			</address>
+			<p>Design and Content © John Arthur</p>
+		</div>
+
+		<!-- build:js /assets/js/jta.js -->
+		<!--
+	  <script src="/assets/js/lib/jquery/jquery.min.js"></script>
+	  <script src="/assets/js/jta.js"></script>
+	  -->
+	  <!-- endbuild -->
+
+	</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends "templates/master" %}
+
+{% block mainContent %}
+<h1>Contact</h1>
+	<p>I would really appreciate hearing what you have to say about this site, or any of the work showcased herein. You can use the form below to send me an e-mail, or you can use my contact information below, if you prefer. Either way, I’ll be sure to get back to you as soon as possible.</p>
+
+	<form name="Contact_Us" action="/contact/" method="post">
+		<fieldset>
+			<label>Name: <input name="from_name" value="" type="text"></label>
+			<label>E-mail Address: <input name="from_address" value="" type="text"></label>
+			<label class="form-textarea">Message: <textarea name="body"></textarea></label>
+		</fieldset>
+		<fieldset class="form-controls">
+			<button type="submit" name="secretDoor" value="1">Send it!</button>
+			<button type="reset">Start over!</button>
+		</fieldset>
+	</form>
+{% endblock mainContent %}
