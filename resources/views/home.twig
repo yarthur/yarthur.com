@@ -1,6 +1,6 @@
 {% extends "templates/master" %}
 
 {% block mainContent %}
-<h1>Hi! I’m John.</h1>
-	<p>I’m a Web Developer in Omaha, Nebraska. Using <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript, I build professional-grade web sites atop a solid foundation of usability and accessibility. At this site, you can learn more about <a href="/about.html" title="About Me | John Arthur">me</a>, <a href="/experience.html" title="Experience | John Arthur">my skills, knowledge, and experience</a>, and <a href="/portfolio" title="Portfolio | John Arthur">some of my past work</a>. Yearning for more? <a href="/contact.html">Drop me a line</a>, and I’ll get back to you as soon as I can.</p>
+<h1>Hi! I&rsquo;m John.</h1>
+<p>I&rsquo;m a Web Developer in Omaha, Nebraska. Using <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript, I build professional-grade web sites atop a solid foundation of usability and accessibility. At this site, you can learn more about <a href="{{ route('about') }}" title="About Me | John Arthur">me</a>, and <a href="{{ route('experience') }}" title="Experience | John Arthur">my skills, knowledge, and experience</a>. Yearning for more? <a href="{{ route('contact') }}">Drop me a line</a>, and I&rsquo;ll get back to you as soon as I can.</p>
 {% endblock mainContent %}
