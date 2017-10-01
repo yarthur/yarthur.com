@@ -39,7 +39,7 @@
   list-style: none;
 }
 /* line 245, ../../../_app/assets/_scss/main.scss */
-.h-resume .experience + .experience {
+.h-resume .p-experience + .p-experience {
   margin-top: 1.5rem;
 }
 

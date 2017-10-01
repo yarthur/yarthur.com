@@ -1,74 +1,74 @@
 {% extends "templates/master" %}
 
-{% set bodyClass = "h-resume hresume" %}
+{% set bodyClass = "h-resume" %}
 
 {% block mainContent %}
 <h1>Experience</h1>
-	<p class="summary">I’m a front-end developer interested in opportunities to practice and develop skills for an organization committed to providing its clients with professional-grade Web sites.</p>
+	<p class="p-summary">I’m a front-end developer interested in opportunities to practice and develop skills for an organization committed to providing its clients with professional-grade Web sites.</p>
 
 	<section>
 	<h2>Skills</h2>
-		<p>Very knowledgeable of <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/HTML"><abbr title="Hypertext Markup Language">HTML</abbr></a> (including <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/HTML5">HTML5</a>), <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets"><abbr title="Cascading Style Sheets">CSS</abbr></a>, and <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>. Also comfortable with <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/SQL"><abbr title="Structured Query Language">SQL</abbr></a> (and especially <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/MySQL">MySQL</a>) and <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/XML"><abbr title="Extensible Markup Language">XML</abbr></a>.</p>
-		<p><a rel="tag" class="p-skill skill" href="http://www.w3.org/WAI/intro/accessibility.php">Accessibility</a>, <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/Web_usability">usability</a>, <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/Device_independence">device independence</a>/<a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/Content_adaptation">content adaptation</a>, and <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/Search_engine_optimization#Getting_indexed">search engine optimization</a> are key principles behind any development work.</p>
-		<p>Comfortable developing with little more than a text editor and <abbr title="File Trasfer Protocol">FTP</abbr> client. Previous work utilized the following programs: <a rel="tag" class="p-skill skill" href="http://www.adobe.com/products/fireworks.html">Fireworks</a>, <a rel="tag" class="p-skill skill" href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a>, <a rel="tag" class="p-skill skill" href="http://en.wikipedia.org/wiki/MyEclipse">MyEclipse</a>, <a rel="tag" class="p-skill skill" href="http://www.adobe.com/products/photoshop.html">Photoshop</a>. Familiar working on both <a rel="tag" class="p-skill skill" href="http://www.apple.com/macosx/">OS X</a> and <a rel="tag" class="p-skill skill" href="http://www.microsoft.com/windows/">Windows</a> systems alike.</p>
+		<p>Very knowledgeable of <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/HTML"><abbr title="Hypertext Markup Language">HTML</abbr></a> (including <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/HTML5">HTML5</a>), <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets"><abbr title="Cascading Style Sheets">CSS</abbr></a>, and <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>. Also comfortable with <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/SQL"><abbr title="Structured Query Language">SQL</abbr></a> (and especially <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/MySQL">MySQL</a>) and <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/XML"><abbr title="Extensible Markup Language">XML</abbr></a>.</p>
+		<p><a rel="tag" class="p-skill" href="http://www.w3.org/WAI/intro/accessibility.php">Accessibility</a>, <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/Web_usability">usability</a>, <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/Device_independence">device independence</a>/<a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/Content_adaptation">content adaptation</a>, and <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/Search_engine_optimization#Getting_indexed">search engine optimization</a> are key principles behind any development work.</p>
+		<p>Comfortable developing with little more than a text editor and <abbr title="File Trasfer Protocol">FTP</abbr> client. Previous work utilized the following programs: <a rel="tag" class="p-skill" href="http://www.adobe.com/products/fireworks.html">Fireworks</a>, <a rel="tag" class="p-skill" href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a>, <a rel="tag" class="p-skill" href="http://en.wikipedia.org/wiki/MyEclipse">MyEclipse</a>, <a rel="tag" class="p-skill" href="http://www.adobe.com/products/photoshop.html">Photoshop</a>. Familiar working on both <a rel="tag" class="p-skill" href="http://www.apple.com/macosx/">OS X</a> and <a rel="tag" class="p-skill" href="http://www.microsoft.com/windows/">Windows</a> systems alike.</p>
 	</section>
 
-	<section class="vcalendar">
+	<section>
 	<h2>Work Experience</h2>
 		<ol>
-			<li class="experience vevent vcard">
-				<strong class="title summary"><abbr title="User Experience">UX</abbr> Developer</strong><br />
-				<a href="https://www.mutualofomaha.com" class="fn org url">Mutual of Omaha</a>,
-				<span class="locality">Omaha</span>,
-				<span class="region">Nebraska</span>
+			<li class="p-experience h-event h-card">
+				<strong class="p-summary p-job-title"><abbr title="User Experience">UX</abbr> Developer</strong><br />
+				<a href="https://www.mutualofomaha.com" class="p-name p-org u-url">Mutual of Omaha</a>,
+				<span class="p-locality">Omaha</span>,
+				<span class="p-region">Nebraska</span>
 				-
-				<time class="dtstart" datetime="2014-10-06">October 6, 2014</time>
+				<time class="dt-start" datetime="2014-10-06">October 6, 2014</time>
 				- Present
 			</li>
-			<li class="experience vevent vcard">
-				<strong class="title summary">Rich Internet Application Developer</strong><br />
-				<a href="http://www.hayneedleinc.com" class="fn org url">Hayneedle</a>,
-				<span class="locality">Omaha</span>,
-				<span class="region">Nebraska</span>
+			<li class="p-experience h-event h-card">
+				<strong class="p-summary p-job-title">Rich Internet Application Developer</strong><br />
+				<a href="http://www.hayneedleinc.com" class="p-name p-org u-url">Hayneedle</a>,
+				<span class="p-locality">Omaha</span>,
+				<span class="p-region">Nebraska</span>
 				—
-				<time class="dtstart" datetime="2012-09-17">September 17, 2012</time>
+				<time class="dt-start" datetime="2012-09-17">September 17, 2012</time>
 				–
-				<time class="dtend" datetime="2014-10-03">October 3, 2014</time>
+				<time class="dt-end" datetime="2014-10-03">October 3, 2014</time>
 			{#
-				<p class="description">Developed the front-end interface and interaction for various features on the company’s e-commerce sites. Was involved in some server-side development, especially with regards to AJAX request handling. Languages used: HTML, CSS, JavaScript, ColdFusion.</p>
+				<p class="p-description">Developed the front-end interface and interaction for various features on the company’s e-commerce sites. Was involved in some server-side development, especially with regards to AJAX request handling. Languages used: HTML, CSS, JavaScript, ColdFusion.</p>
 			#}
 			</li>
-			<li class="experience vevent vcard">
-				<strong class="title summary">Web Developer</strong><br />
-				<a href="http://www.micros-retail.com" class="fn org url">Micros-Retail</a>,
-				<span class="locality">Omaha</span>,
-				<span class="region">Nebraska</span>
+			<li class="p-experience h-event h-card">
+				<strong class="p-summary p-job-title">Web Developer</strong><br />
+				<a href="http://www.micros-retail.com" class="p-name p-org u-url">Micros-Retail</a>,
+				<span class="p-locality">Omaha</span>,
+				<span class="p-region">Nebraska</span>
 				—
-				<time class="dtstart" datetime="2007-10-03">October 3, 2007</time>
+				<time class="dt-start" datetime="2007-10-03">October 3, 2007</time>
 				–
-				<time class="dtend" datetime="2012-09-14">September 14, 2012</time>
+				<time class="dt-end" datetime="2012-09-14">September 14, 2012</time>
 				{#
-				<p class="description">Developed the front-end interface for multiple e-commerce sites. Often worked from client-supplied designs, occasionally required to implement own design decisions. Languages used: (X)HTML, CSS, JavaScript, XML, SQL, some JSP/JSTL.</p>
+				<p class="p-description">Developed the front-end interface for multiple e-commerce sites. Often worked from client-supplied designs, occasionally required to implement own design decisions. Languages used: (X)HTML, CSS, JavaScript, XML, SQL, some JSP/JSTL.</p>
 				#}
 			</li>
-			<li class="experience vevent vcard">
-				<strong class="title summary">Web Designer</strong><br />
-				<a href="http://www.cadan.com" class="fn org url">CaDan Computers</a>,
-				<span class="locality">St. Paul</span>,
-				<span class="region">Minnesota</span>
+			<li class="p-experience h-event h-card">
+				<strong class="p-summary p-job-title">Web Designer</strong><br />
+				<a href="http://www.cadan.com" class="p-name p-org u-url">CaDan Computers</a>,
+				<span class="p-locality">St. Paul</span>,
+				<span class="p-region">Minnesota</span>
 				—
-				<time class="dtstart" datetime="2006-04-18">April 18, 2006</time>
+				<time class="dt-start" datetime="2006-04-18">April 18, 2006</time>
 				–
-				<time class="dtend" datetime="2007-09-28">September 28, 2007</time>
+				<time class="dt-end" datetime="2007-09-28">September 28, 2007</time>
 				{#
-				<p class="description">Developed and maintained sites internally and for clients, including integrating and configuring third-party e-commerce interfaces. Languages used: <abbr title="(Extensible) Hyptertext Markup Language">(X)HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, JavaScript.</p>
+				<p class="p-description">Developed and maintained sites internally and for clients, including integrating and configuring third-party e-commerce interfaces. Languages used: <abbr title="(Extensible) Hyptertext Markup Language">(X)HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, JavaScript.</p>
 				#}
 			</li>
 		</ol>
 	</section>
 
-	<section class="education vevent vcard">
+	<section class="p-education h-event h-card">
 	<h2>Education</h2>
-		<a class="fn org url" href="http://www.creighton.edu">Creighton University</a>, <span class="locality">Omaha</span>, <abbr class="region" title="Nebraska">NE</abbr> — <abbr class="title summary" title="Bachelor of Sciecne in Business Administration">BSBA</abbr>, <time class="dtstart" datetime="2005-05-01">2005</time>
+		<a class="p-name p-org u-url" href="http://www.creighton.edu">Creighton University</a>, <span class="p-locality">Omaha</span>, <abbr class="p-region" title="Nebraska">NE</abbr> — <abbr class="p-summary p-job-title" title="Bachelor of Sciecne in Business Administration">BSBA</abbr>, <time class="dt-start" datetime="2005-05-01">2005</time>
 	</section>
 {% endblock mainContent %}
