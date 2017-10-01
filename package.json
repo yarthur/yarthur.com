@@ -2,28 +2,47 @@
 	"private": true,
 	"scripts": {
 		"dev": "npm run development",
-		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"watch-poll": "npm run watch -- --watch-poll",
+		"development": "NODE_ENV=development npm run postcss",
 		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"prod": "npm run production",
-		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+		"production": "NODE_ENV=production npm run postcss",
+		"postcss": "postcss resources/assets/*.css --dir public/assets/",
+		"watch": "npm run development -- -- -w",
+		"watch-poll": "npm run watch -- --watch-poll"
 	},
 	"devDependencies": {
-		"axios": "^0.16.2",
-		"bootstrap-sass": "^3.3.7",
-		"cross-env": "^5.0.1",
-		"eslint": "^4.5.0",
-		"jquery": "^3.1.1",
-		"laravel-mix": "^1.0",
-		"lodash": "^4.17.4",
-		"vue": "^2.1.10"
+		"cssnano": "^3.10.0",
+		"postcss": "^6.0.12",
+		"postcss-bem-linter": "^3.0.0",
+		"postcss-cli": "^4.1.1",
+		"postcss-cssnext": "^3.0.2",
+		"postcss-import": "^11.0.0",
+		"postcss-normalize": "^4.0.0",
+		"reset-css": "^2.2.1"
 	},
 	"eslintConfig": {
 		"extends": "eslint:recommended",
 		"env": {
 			"browser": true,
 			"es6": true
+		}
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
+	"postcss": {
+		"map": {
+			"inline": false
+		},
+		"plugins": {
+			"postcss-import": {},
+			"postcss-bem-linter": {
+				"preset": "suit"
+			},
+			"postcss-normalize": {},
+			"postcss-cssnext": {},
+			"cssnano": {}
 		}
 	}
 }

@@ -1,0 +1,127 @@
+/*		Generic Styles		*/
+/* line 4, ../../../_app/assets/_scss/main.scss */
+html,
+body,
+input,
+select,
+textarea {
+  font: 1em/1.5rem Helvetica, Arial, sans-serif;
+  text-align: justify;
+}
+
+/* line 12, ../../../_app/assets/_scss/main.scss */
+body {
+  min-width: 20rem;
+  border-bottom: 1rem solid #FFF;
+  margin: 0 auto;
+}
+
+/* line 18, ../../../_app/assets/_scss/main.scss */
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+/* line 24, ../../../_app/assets/_scss/main.scss */
+h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* line 30, ../../../_app/assets/_scss/main.scss */
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* line 35, ../../../_app/assets/_scss/main.scss */
+h3 {
+  padding-left: 2rem;
+  text-indent: -2rem;
+}
+
+p {
+	margin-bottom: 0;
+}
+/* line 40, ../../../_app/assets/_scss/main.scss */
+p + p {
+	margin-top: 0;
+  text-indent: 2rem;
+}
+
+ol,
+ul {
+	padding: 0;
+}
+
+/* line 44, ../../../_app/assets/_scss/main.scss */
+a,
+a:visited {
+  color: #69F;
+}
+
+/* line 49, ../../../_app/assets/_scss/main.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 53, ../../../_app/assets/_scss/main.scss */
+a:hover,
+a:visited:hover {
+  color: #30C;
+}
+
+/* line 58, ../../../_app/assets/_scss/main.scss */
+em {
+  font-style: italic;
+}
+
+/* line 62, ../../../_app/assets/_scss/main.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 66, ../../../_app/assets/_scss/main.scss */
+form {
+  max-width: 30rem;
+  text-align: right;
+}
+
+/* line 71, ../../../_app/assets/_scss/main.scss */
+.form-controls {
+  right: 0rem;
+  left: auto;
+  width: 20rem;
+}
+
+/* line 77, ../../../_app/assets/_scss/main.scss */
+label {
+  display: block;
+  padding-bottom: 1.5rem;
+}
+
+/* line 82, ../../../_app/assets/_scss/main.scss */
+.form-textarea {
+  padding: 0 .6rem 1.5rem;
+  text-align: left;
+  text-indent: -.6rem;
+}
+
+/* line 88, ../../../_app/assets/_scss/main.scss */
+input {
+  width: 19.5rem;
+  padding: 0 .25rem;
+  border: .1rem inset;
+}
+
+/* line 94, ../../../_app/assets/_scss/main.scss */
+textarea {
+  width: 100%;
+  height: 6rem;
+  padding: .75rem .5rem;
+  border: .1rem inset;
+  margin: .75rem -.6rem 0;
+}
+

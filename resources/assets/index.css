@@ -1,0 +1,225 @@
+@import "./reset/index.css";
+@import "./banner/index.css";
+@import "./navigation/index.css";
+
+/*		Main Content Styles		*/
+/* line 185, ../../../_app/assets/_scss/main.scss */
+[role="main"] {
+  max-width: 39rem;
+  padding: .5rem .5rem 1rem;
+  margin: 0 auto;
+}
+
+/*		About Styles		*/
+/* line 219, ../../../_app/assets/_scss/main.scss */
+.bookTitle {
+  text-decoration: underline;
+}
+
+/*		Archrival Links		*/
+/* line 224, ../../../_app/assets/_scss/main.scss */
+.about #Archrival_Links ul,
+.about #Archrival_Links li {
+  list-style: none;
+}
+
+/* line 229, ../../../_app/assets/_scss/main.scss */
+.about #Archrival_Links li {
+  padding-top: 1.5rem;
+}
+
+/* line 233, ../../../_app/assets/_scss/main.scss */
+.about #Archrival_Links a {
+  font-size: 1.25rem;
+}
+
+/*		Experience Styles		*/
+/* line 241, ../../../_app/assets/_scss/main.scss */
+.h-resume ol {
+  list-style: none;
+}
+/* line 245, ../../../_app/assets/_scss/main.scss */
+.h-resume .experience + .experience {
+  margin-top: 1.5rem;
+}
+
+/*		Portfolio Styles		*/
+/* line 259, ../../../_app/assets/_scss/main.scss */
+.portView {
+  position: relative;
+  width: 40rem;
+  padding: .5rem 0 1rem;
+  border-radius: .25rem;
+  margin: 1.5rem -.5rem 0;
+  background: #666;
+  list-style: none;
+  word-spacing: -.5rem;
+}
+/* line 269, ../../../_app/assets/_scss/main.scss */
+.portView li {
+  position: relative;
+  display: inline-block;
+  background: #666;
+  list-style: none;
+  word-spacing: normal;
+}
+/* line 277, ../../../_app/assets/_scss/main.scss */
+.portView a {
+  display: table;
+  width: 9.5rem;
+  height: 9.5rem;
+  overflow: hidden;
+  margin: .25rem;
+  color: #CCC;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 289, ../../../_app/assets/_scss/main.scss */
+.portView img {
+  position: absolute;
+  top: .25rem;
+  left: .25rem;
+  clip: rect(0 9.5rem 9.5rem 0);
+}
+/* line 296, ../../../_app/assets/_scss/main.scss */
+.portView a:hover img {
+  opacity: .5;
+}
+/* line 300, ../../../_app/assets/_scss/main.scss */
+.portView em {
+  position: relative;
+  z-index: 10;
+  display: none;
+  width: 8.5rem;
+  height: 8.5rem;
+  padding: 0 .5rem;
+  color: #FFF;
+  font-weigth: bold;
+  text-shadow: 0 0 .5rem #666, 0 0 .1rem #000;
+  letter-spacing: .1rem;
+  vertical-align: middle;
+}
+/* line 314, ../../../_app/assets/_scss/main.scss */
+.portView a:hover em {
+  display: table-cell;
+}
+
+/* line 319, ../../../_app/assets/_scss/main.scss */
+[role="main"] .portViewLg {
+  display: block;
+  border: .5rem solid #666;
+  margin: 0 auto;
+}
+
+/*		Contact Styles		*/
+/*		Lightbox Styles		*/
+/* line 331, ../../../_app/assets/_scss/main.scss */
+#JMD_LightBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+  background: rgba(0, 0, 0, 0.6);
+}
+/* line 340, ../../../_app/assets/_scss/main.scss */
+#JMD_LightBox .lbContent {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  width: 600px;
+  overflow: auto;
+  border: 10px solid #FFF;
+  border-radius: 10px;
+  margin-left: -310px;
+  background: #FFF;
+  box-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-align: center;
+}
+/* line 354, ../../../_app/assets/_scss/main.scss */
+#JMD_LightBox .lbPrev,
+#JMD_LightBox .lbNext {
+  position: absolute;
+  bottom: 0;
+  padding: .5rem 1rem;
+  border: solid #FFF;
+  background: #FFF;
+  opacity: .6;
+  cursor: pointer;
+}
+/* line 365, ../../../_app/assets/_scss/main.scss */
+#JMD_LightBox .lbPrev:hover,
+#JMD_LightBox .lbNext:hover {
+  border-color: #DDD;
+  opacity: .8;
+}
+/* line 371, ../../../_app/assets/_scss/main.scss */
+#JMD_LightBox .lbPrev {
+  left: 0;
+  border-width: 1px 1px 0 0;
+  border-top-right-radius: 5px;
+}
+/* line 377, ../../../_app/assets/_scss/main.scss */
+#JMD_LightBox .lbNext {
+  right: 0;
+  border-width: 1px 0 0 1px;
+  border-top-left-radius: 5px;
+}
+/* line 383, ../../../_app/assets/_scss/main.scss */
+#JMD_LightBox .lbClose {
+  position: absolute;
+  top: 75px;
+  right: 50%;
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+  border: 10px double #C30;
+  border-radius: 15px;
+  margin: -15px -325px 0 0;
+  background: #FFF;
+  box-shadow: 0.1rem 0.1rem 0.1rem #333;
+  text-indent: -999rem;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/*		Guest Controls Styles		*/
+/* line 103, ../../../_app/assets/_scss/main.scss */
+#JTA_Guest_Controls {
+  position: relative;
+  width: 100%;
+  padding: .5rem 0 1rem;
+  background: #999;
+}
+/* line 110, ../../../_app/assets/_scss/main.scss */
+#JTA_Guest_Controls strong,
+#JTA_Guest_Controls p,
+#JTA_Guest_Controls .contentControls {
+  position: relative;
+  display: block;
+  max-width: 39rem;
+  padding: 0 .5rem;
+  margin: 0 auto;
+}
+/* line 120, ../../../_app/assets/_scss/main.scss */
+#JTA_Guest_Controls strong {
+  z-index: 1;
+  background: #CCC;
+}
+/* line 125, ../../../_app/assets/_scss/main.scss */
+#JTA_Guest_Controls p {
+  z-index: 0;
+}
+/* line 129, ../../../_app/assets/_scss/main.scss */
+#JTA_Guest_Controls .contentControls {
+  z-index: 2;
+  text-align: right;
+}
+

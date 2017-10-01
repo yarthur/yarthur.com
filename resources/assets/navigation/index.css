@@ -1,0 +1,44 @@
+.NavMain {
+	margin: 0;
+	padding: 0;
+	border-top: .25rem solid #000;
+	border-bottom: .75rem double #000;
+	text-align: center;
+	word-spacing: -.5rem;
+}
+
+.NavMain-wrapper {
+	width: 10rem;
+	display: inline-block;
+}
+
+.NavMain-link,
+.NavMain-link:visited:hover {
+	display: block;
+	padding: .4rem 0 .8rem;
+	color: #000;
+	line-height: 1;
+	text-decoration: none;
+	word-spacing: normal;
+}
+
+.NavMain-link:hover {
+	text-shadow: 0.1rem 0.1rem 0.1rem #99C;
+}
+
+/*		Mobile styles		*/
+@media (max-width: 39rem) {
+  /* line 170, ../../../_app/assets/_scss/main.scss */
+  .NavMain li {
+    width: 50%;
+  }
+  /* line 173, ../../../_app/assets/_scss/main.scss */
+  .NavMain li li:nth-child(1),
+  .NavMain li li:nth-child(2) {
+    border-bottom: .1rem solid #000;
+  }
+  /* line 178, ../../../_app/assets/_scss/main.scss */
+  .NavMain li li:nth-child(2) {
+    margin-left: -.25rem;
+  }
+}

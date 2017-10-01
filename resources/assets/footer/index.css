@@ -1,0 +1,16 @@
+.Footer {
+  padding-top: .3125rem;
+  border-top: .3125rem solid #000;
+  font-size: .8rem;
+  line-height: 1.875;
+  text-align: center;
+}
+
+.Footer-identity {
+  padding: .625rem 0 1.25rem;
+  line-height: 1;
+}
+
+[role="contentinfo"] a[href="http://www.linkedin.com/pub/john-arthur/3/b60/591"] img {
+  margin-top: -3px;
+}
