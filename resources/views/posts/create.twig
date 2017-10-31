@@ -1,0 +1,25 @@
+{% extends 'templates/master' %}
+
+{% block mainContent %}
+<form action="{{ route('posts.store') }}" method="POST">
+	<fieldset class="formHidden" style="display: none;">
+		{{ csrf_field() }}
+	</fieldset>
+	<label>Title
+		<input type="text" name="title" />
+	</label>
+	<label>Summary
+		<textarea name="summary"></textarea>
+	</label>
+	<label>Content
+		<textarea name="content"></textarea>
+	</label>
+	<label>Image
+		<input type="text" name="image" />
+	</label>
+	<label>Banner Image
+		<input type="text" name="banner_image" />
+	</label>
+	<button type="Submit">Publish</button>
+</form>
+{% endblock mainContent %}
