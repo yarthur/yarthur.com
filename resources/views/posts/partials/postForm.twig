@@ -1,0 +1,73 @@
+{% if action == 'store' %}
+	{% set _formAction = route('posts.store') %}
+{% elseif action == 'update' %}
+	{% set _formAction = route('posts.' ~ action, post.id) %}
+{% endif %}
+
+<form action="{{ _formAction }}" method="POST">
+	<fieldset class="formHidden" style="display: none;">
+		{{ csrf_field() }}
+		{% if action == 'update' %}
+			{{ method_field('PUT') }}
+		{% endif %}
+	</fieldset>
+	{% if action == 'store' %}
+		<label>Title
+			<input type="text" name="title" value="{{ post.title }}"/>
+
+			{% if errors.has('title') == true %}
+				{% for error in errors.get('title') %}
+					<span>{{ error }}</span>
+				{% endfor %}
+			{% endif %}
+		</label>
+	{% else %}
+		Title: {{ post.title }}
+	{% endif %}
+
+	<label>Published
+		<input type="checkbox" name="published" value="1" {{ post.published ? 'disabled'}} />
+	</label>
+
+	<label>Summary
+		<textarea name="summary">{{ post.summary }}</textarea>
+
+		{% if errors.has('summary') == true %}
+			{% for error in errors.get('title') %}
+				<span>{{ error }}</span>
+			{% endfor %}
+		{% endif %}
+	</label>
+
+	<label>Content
+		<textarea name="content">{{ post.content }}</textarea>
+
+		{% if errors.has('content') == true %}
+			{% for error in errors.get('content') %}
+				<span>{{ error }}</span>
+			{% endfor %}
+		{% endif %}
+	</label>
+
+	<label>Image
+		<input type="text" name="image" value="{{ post.image }}"/>
+
+		{% if errors.has('image') == true %}
+			{% for error in errors.get('image') %}
+				<span>{{ error }}</span>
+			{% endfor %}
+		{% endif %}
+	</label>
+
+	<label>Banner Image
+		<input type="text" name="banner_image" value="{{ post.banner_image }}"/>
+
+		{% if errors.has('banner_image') == true %}
+			{% for error in errors.get('banner_image') %}
+				<span>{{ error }}</span>
+			{% endfor %}
+		{% endif %}
+	</label>
+
+	<button type="Submit">Publish</button>
+</form>

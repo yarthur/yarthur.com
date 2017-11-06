@@ -68,7 +68,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        //
+        return view('posts/edit', ['post' => $post]);
     }
 
     /**
@@ -80,7 +80,24 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $validatedData = $request->validate([
+            'summary' => 'required',
+            'content' => 'required',
+            'image' => '',
+            'banner_image' => '',
+        ]);
+
+        foreach ($validatedData as $vdKey => $vdValue) {
+            $post[$vdKey] = $vdValue;
+        }
+
+        $post['published'] = ($request->get('published') === '1') ?
+            true :
+            $post['published'];
+
+        $post->save();
+
+        return redirect()->route('posts.show', [$post]);
     }
 
     /**
