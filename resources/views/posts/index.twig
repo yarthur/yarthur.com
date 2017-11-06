@@ -1,0 +1,9 @@
+{% extends 'templates/master' %}
+
+{% block mainContent %}
+<ol>
+	{% for post in posts %}
+	<li><a href="{{ route('posts.show', post.id) }}">{{ post.title }}</a>
+	{% endfor %}
+</ol>
+{% endblock mainContent %}

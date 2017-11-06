@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->text('summary');
             $table->string('image');
             $table->string('banner_image');
+            $table->boolean('published')->default(false);
 
             $table->timestamps();
         });
