@@ -1,6 +1,66 @@
-{% extends "templates/master" %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
 
-{% block mainContent %}
-<h1>Hi! I&rsquo;m John.</h1>
-<p>I&rsquo;m a Web Developer in Omaha, Nebraska. Using <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript, I build professional-grade web sites atop a solid foundation of usability and accessibility. At this site, you can learn more about <a href="{{ route('about') }}" title="About Me | John Arthur">me</a>, and <a href="{{ route('experience') }}" title="Experience | John Arthur">my skills, knowledge, and experience</a>. Yearning for more? <a href="{{ route('contact') }}">Drop me a line</a>, and I&rsquo;ll get back to you as soon as I can.</p>
-{% endblock mainContent %}
+		<title>Yarthur.com -- Personal Web Site of John Arthur</title>
+
+		<link type="image/x-icon" rel="shortcut icon" href="/images/layout/favicon.png">
+
+		<link rel="stylesheet" href="/assets/index.css">
+
+		{% if (gaId != null) %}
+		<!-- Global Site Tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id={{ gaId }}"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', '{{ gaId }}');
+		</script>
+		{% endif %}
+	</head>
+
+	<body class="www-yarthur-com {{ bodyClass }}">
+		<div role="main">
+		<h1>John Arthur is</h1>
+			<ol>
+				<li>a father, husband, and web developer;</li>
+				<li>lives in Lincoln, Nebraska;</li>
+				<li><a href='https://www.mutualofomaha.com'>works in Omaha, Nebraska</a>;</li>
+				<li>thinks he&rsquo;s pretty amusing;</li>
+				<li>admits to being easily amused;</li>
+				<li>has been known to ramble on a bit too much;</li>
+				<li>can be found at the following places:
+					<ul>
+						<li>Email: <a href="mailto:yarthur@yarthur.com">yarthur@yarthur.com</a></li>
+						<li>Twitter: <a href="https://twitter.com/Yarthur">@Yarthur</a></li>
+
+						<li><a href="http://www.linkedin.com/pub/john-arthur/3/b60/591" style="text-decoration:none;">LinkedIn</a></li>
+					</ul>
+				</li>
+				<li>hopes to do more with this site in the very near future.</li>
+			</ol>
+		</div>
+
+		<div class="Footer" role="contentinfo">
+			<address class="h-card contact Footer-identity">
+				<a class="p-name p-org u-url" href="{{ route('home') }}" title="John Arthur [www.jtarthur.net]" rel="me"><span class="p-given-name">John</span> <span class="p-family-name">Arthur</span></a>
+				|
+				<span class="h-adr p-adr">
+					<span class="p-locality">Lincoln</span>,
+					<span class="p-region">Nebraska</span>
+				</span>
+				|
+				<span class="u-email">yarthur@yarthur.com</span>
+				|
+				<a href="http://www.linkedin.com/pub/john-arthur/3/b60/591" style="text-decoration:none;">
+					<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" alt="View John Arthur's LinkedIn profile" style="vertical-align:middle" width="20" border="0" height="15">
+				</a>
+			</address>
+			<p>Design and Content © John Arthur</p>
+		</div>
+	</body>
+</html>
