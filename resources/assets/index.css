@@ -2,25 +2,26 @@
 
 :root {
 	/* Light */
-	--bgColor-body: var(--base3);
-	--bgColor-header: var(--base2);
-	--bgColor-footer: var(--base2);
-	--textColor-default: var(--base00);
-	--textColor-link: var(--blue);
-	--textColor-linkVisited: var(--violet);
-
-	/* Dark */
-	/* --bgColor-body: var(--base02); */
-	/* --bgColor-header: var(--base03); */
-	/* --bgColor-footer: var(--base03); */
-	/* --textColor-default: var(--base0); */
+	/* --bgColor-body: var(--base3); */
+	/* --bgColor-header: var(--base2); */
+	/* --bgColor-footer: var(--base2); */
+	/* --textColor-default: var(--base00); */
 	/* --textColor-link: var(--blue); */
 	/* --textColor-linkVisited: var(--violet); */
 
+	/* Dark */
+	/* --bgColor-body: var(--base02); */
+	--bgColor-body: var(--base03);
+	--bgColor-header: var(--base02);
+	--bgColor-footer: var(--base03);
+	--textColor-default: var(--base0);
+	--textColor-link: var(--cyan);
+	--textColor-linkVisited: var(--violet);
+
 
 	/* Backgrounds */
-	--banner-bg: var(--bgColor-header) linear-gradient(to top, var(--bgColor-body) 0rem, transparent 1.5rem) top left repeat-x;
-	--footer-bg: var(--bgColor-footer) linear-gradient(var(--bgColor-body), transparent 1.5rem) repeat-x;
+	--banner-bg: var(--bgColor-header) linear-gradient(to top, var(--bgColor-body) 0rem, var(--bgColor-header) 1.5rem) top left repeat-x;
+	--footer-bg: var(--bgColor-footer) linear-gradient(var(--bgColor-body), var(--bgColor-footer) 1.5rem) repeat-x;
 
 	--text-grid-baseline: linear-gradient(var(--blue) 1px, transparent 1px) 0 0/20px 1.5rem repeat;
 }
@@ -99,10 +100,12 @@ li {
 	line-height: 1;
 
 	& a {
-		background: url(./images/yarthlogo.svg) left top/2.5rem no-repeat;
 		color: var(--textColor-default);
-		padding-left: 3rem;
 		text-decoration: none;
+	}
+
+	& svg {
+		height: 2.5rem;
 	}
 
 	@media (--medium) {
@@ -113,9 +116,8 @@ li {
 	@media (--large) {
 		font-size: 4.5rem;
 
-		& a {
-			padding-left: 6rem;
-			background-size: 4.5rem;
+		& svg {
+			height: 4.5rem;
 		}
 	}
 }
@@ -151,7 +153,7 @@ li {
 [role="contentinfo"] {
 	margin: 0 -.5rem -1.5rem;
 	padding: 1.5rem .5rem;
-	background: var(--footer-bg);
+	/* background: var(--footer-bg); */
 	color: var(--textColor-default);
 	grid-row-start: footer;
 
