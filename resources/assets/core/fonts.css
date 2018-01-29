@@ -1,0 +1,21 @@
+@font-face {
+	font-family: Plex;
+	font-style: normal;
+	font-weight: normal;
+	src: url("../../node_modules/@ibm/type/fonts/Sans/web/woff2/IBMPlexSans-Regular-Latin1.woff2") format("woff2"),
+	     url("../../node_modules/@ibm/type/fonts/Sans/web/woff/IBMPlexSans-Regular-Latin1.woff") format("woff");
+}
+
+@font-face {
+	font-family: Plex;
+	font-weight: 700;
+	src: url('../../node_modules/@ibm/type/fonts/Sans/web/woff2/IBMPlexSans-SemiBold-Latin1.woff2') format("woff2"),
+	     url('../../node_modules/@ibm/type/fonts/Sans/web/woff/IBMPlexSans-SemiBold-Latin1.woff') format("woff");
+}
+
+@font-face {
+	font-family: Plex;
+	font-style: italic;
+	src: url('../../node_modules/@ibm/type/fonts/Sans/web/woff2/IBMPlexSans-Italic-Latin1.woff2') format("woff2"),
+	     url('../../node_modules/@ibm/type/fonts/Sans/web/woff/IBMPlexSans-Italic-Latin1.woff') format("woff");
+}

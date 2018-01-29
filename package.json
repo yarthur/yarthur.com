@@ -2,29 +2,41 @@
 	"private": true,
 	"scripts": {
 		"dev": "npm run development",
-		"development": "NODE_ENV=development npm run postcss",
+		"development": "export NODE_ENV=development && npm run production",
 		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"prod": "npm run production",
-		"production": "NODE_ENV=production npm run postcss",
+		"production": "export NODE_ENV=${NODE_ENV:=production} && webpack",
 		"postcss": "postcss resources/assets/*.css --dir public/assets/",
 		"watch": "npm run development -- -- -w",
 		"watch-poll": "npm run watch -- --watch-poll"
 	},
 	"devDependencies": {
+		"css-loader": "^0.28.8",
 		"cssnano": "^3.10.0",
+		"extract-text-webpack-plugin": "^3.0.2",
+		"file-loader": "^1.1.6",
+		"image-webpack-loader": "^3.4.2",
 		"postcss": "^6.0.12",
 		"postcss-bem-linter": "^3.0.0",
 		"postcss-cli": "^4.1.1",
 		"postcss-cssnext": "^3.0.2",
 		"postcss-import": "^11.0.0",
+		"postcss-loader": "^2.0.10",
 		"postcss-normalize": "^4.0.0",
-		"reset-css": "^2.2.1"
+		"reset-css": "^2.2.1",
+		"style-loader": "^0.19.1",
+		"url-loader": "^0.6.2",
+		"webpack": "^3.10.0"
 	},
 	"eslintConfig": {
 		"extends": "eslint:recommended",
 		"env": {
 			"browser": true,
 			"es6": true
+		},
+		"parserOptions": {
+			"ecmaVersion": "2018",
+			"sourceType": "module"
 		}
 	},
 	"browserslist": [
@@ -44,5 +56,8 @@
 			"postcss-cssnext": {},
 			"cssnano": {}
 		}
+	},
+	"dependencies": {
+		"@ibm/type": "^0.5.2"
 	}
 }

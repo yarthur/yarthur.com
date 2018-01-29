@@ -11,7 +11,7 @@
 |
  */
 
-Route::view('/', 'home')->name('home');
+Route::view('/', 'home', ['gaId' => env('GA_ID')])->name('home');
 
 Route::view('about', 'about')->name('about');
 
