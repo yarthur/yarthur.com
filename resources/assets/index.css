@@ -87,8 +87,17 @@ li {
 	list-style-type: none;
 }
 
+fieldset {
+	border: none;
+}
+label {
+	display: block;
+}
 
-
+input {
+	border: 1px solid var(--base01);
+	background: var(--base02);
+}
 
 
 [role="banner"] {
@@ -146,9 +155,9 @@ li {
 /* 	} */
 /* } */
 
-/* [role="main"] { */
-/* 	border-top: .75rem double; */
-/* } */
+[role="main"] {
+	max-width: 40rem;
+}
 
 [role="contentinfo"] {
 	margin: 0 -.5rem -1.5rem;

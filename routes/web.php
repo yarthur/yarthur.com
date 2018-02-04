@@ -13,10 +13,10 @@
 
 Route::view('/', 'home', ['gaId' => env('GA_ID')])->name('home');
 
-Route::view('about', 'about')->name('about');
+/* Route::view('about', 'about')->name('about'); */
 
-Route::view('experience', 'experience')->name('experience');
+/* Route::view('experience', 'experience')->name('experience'); */
 
 Route::view('contact', 'contact')->name('contact');
 
-Route::resource('posts', 'PostController');
+/* Route::resource('posts', 'PostController'); */
