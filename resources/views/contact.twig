@@ -5,14 +5,14 @@
 	<p>Have a question for me? Maybe I misspelled something, or you found a bug somewhere. Or possibly you just want a new pen-pal. Whatever your reason, I'd love to hear what you have to say. Please use the form below to send me an email.</p>
 
 	<form name="Contact_Us" action="/contact/" method="post">
-		<fieldset>
+		<div>
 			<label>Name: <input name="from_name" value="" type="text"></label>
 			<label>E-mail Address: <input name="from_address" value="" type="text"></label>
 			<label class="form-textarea">Message: <textarea name="body"></textarea></label>
-		</fieldset>
-		<fieldset class="form-controls">
-			<button type="submit" name="secretDoor" value="1">Send it!</button>
-			<button type="reset">Start over!</button>
-		</fieldset>
+		</div>
+		<div class="form-controls">
+			<button class="primary" type="submit" name="secretDoor" value="1">Send it!</button>
+			<button class="cancel" type="reset">Start over!</button>
+		</div>
 	</form>
 {% endblock mainContent %}
